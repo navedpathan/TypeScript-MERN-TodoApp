@@ -10,17 +10,17 @@
 
 /* TodoInput.css */
 
-.todo-input-container {
+.input-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.todo-input-form {
+.input-form {
   margin-bottom: 20px;
 }
 
-.todo-input {
+.input {
   padding: 8px 12px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -28,7 +28,7 @@
   margin-right: 8px;
 }
 
-.todo-input-button {
+.input-button {
   padding: 8px 16px;
   font-size: 16px;
   background-color: #007bff;
@@ -38,17 +38,17 @@
   cursor: pointer;
 }
 
-.todo-input-button:hover {
+.input-button:hover {
   background-color: #0056b3;
 }
 
 /* TodoList.css */
 
-.todo-list {
+.list {
   margin-top: 20px;
 }
 
-.todo-item {
+.item {
   margin-bottom: 10px;
   padding: 12px;
   background-color: #f9f9f9;
@@ -56,41 +56,41 @@
   border-radius: 4px;
 }
 
-.todo-item p {
+.item p {
   margin: 0;
   font-size: 18px;
 }
 
-.todo-item-buttons {
+.item-buttons {
   margin-top: 8px;
 }
 
-.todo-item-button {
+.item-button {
   padding: 4px 8px;
   font-size: 14px;
   margin-right: 4px;
   cursor: pointer;
 }
 
-.todo-item-button.edit {
+.item-button.edit {
   background-color: #ffc107;
   color: #333;
   border: 1px solid #ffc107;
 }
 
-.todo-item-button.delete {
+.item-button.delete {
   background-color: #dc3545;
   color: #fff;
   border: 1px solid #dc3545;
 }
 
-.todo-item-button.save {
+.item-button.save {
   background-color: #28a745;
   color: #fff;
   border: 1px solid #28a745;
 }
 
-.todo-item-button.cancel {
+.item-button.cancel {
   background-color: #6c757d;
   color: #fff;
   border: 1px solid #6c757d;

@@ -25,23 +25,23 @@ const TodoList: React.FC<Props> = ({
   handleDelete,
 }) => {
   return (
-    <div className="todo-list">
+    <div className="list">
       {todos.map((todo, index) => (
-        <div key={todo._id} className="todo-item">
+        <div key={todo._id} className="item">
           {startEditing !== index ? (
             <div>
               <p>{todo.text}</p>
-              <div className="todo-item-buttons">
+              <div className="item-buttons">
                 <button
                   onClick={() => {
                     setStartEditing(index);
                     setEditedText(todo.text);
                   }}
-                  className="todo-item-button edit"
+                  className="item-button edit"
                 >
                   Edit
                 </button>
-                <button onClick={() => handleDelete(todo._id)} className="todo-item-button delete">Delete</button>
+                <button onClick={() => handleDelete(todo._id)} className="item-button delete">Delete</button>
               </div>
             </div>
           ) : (
@@ -51,9 +51,9 @@ const TodoList: React.FC<Props> = ({
                 value={editedText}
                 onChange={(e) => setEditedText(e.target.value)}
               />
-              <div className="todo-item-buttons">
-                <button onClick={() => handleEdit(todo._id)} className="todo-item-button save">Save</button>
-                <button onClick={() => setStartEditing(null)} className="todo-item-button cancel">Cancel</button>
+              <div className="item-buttons">
+                <button onClick={() => handleEdit(todo._id)} className="item-button save">Save</button>
+                <button onClick={() => setStartEditing(null)} className="item-button cancel">Cancel</button>
               </div>
             </div>
           )}

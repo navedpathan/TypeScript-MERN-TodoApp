@@ -50,15 +50,15 @@ const TodoInput: React.FC = () => {
   };
 
   return (
-    <div className="todo-input-container">
-      <form onSubmit={handleAdd} className="todo-input-form">
+    <div className="input-container">
+      <form onSubmit={handleAdd} className="input-form">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="todo-input"
+          className="input"
         />
-        <button type="submit" className="todo-input-button">Add</button>
+        <button type="submit" className="input-button">Add</button>
       </form>
       <TodoList
         todos={addTodo}
