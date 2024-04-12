@@ -11,6 +11,10 @@ app.use(cors());
 
 connectDB();
 
+app.get("/", async (req: Request, res: Response) => {
+  res.send('Hello World!')
+});
+
 app.get("/api/todos", async (req: Request, res: Response) => {
   try {
     const todos = await Todo.find();
