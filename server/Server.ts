@@ -1,7 +1,7 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
-import connectDB from "./db";
-import Todo, { ITodo } from "./model";
+import connectDB from "./src/db";
+import Todo, { ITodo } from "./src/model";
 
 const app = express();
 const PORT = 5000;
